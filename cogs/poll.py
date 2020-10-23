@@ -87,12 +87,8 @@ class Poll(commands.Cog):
                                     pollMessage = pollMessage + "\n\n" + self.emojiLetters[i] + " " + choice
                             i += 1
 
-                        ads = ["\n\n[Don't let eye strain ruin your day. Protect your eyes from harmful blue light using Bakery Gaming's glasses. Use code 'Poll Bot' for 20% off your order.](https://bakerygaming.store/collections/all)"]
-
-
-
                         e = discord.Embed(title="**" + title + "**",
-                                description=pollMessage + ads[0],
+                                description=pollMessage,
                                           colour=0x83bae3)
                         pollMessage = await message.channel.send(embed=e)
                         i = 0
