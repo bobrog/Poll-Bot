@@ -5,7 +5,7 @@ set -ex
 #conf
 : ${git_branch:=`git rev-parse --abbrev-ref HEAD`}
 : ${image_name:=pollbot}
-: ${env_file:=`pwd`/.env/dev.json}
+: ${env_file:=`pwd`/.env/prod.json}
 git_hash=`git rev-parse HEAD`
 
 # build
